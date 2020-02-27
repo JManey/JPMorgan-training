@@ -19,6 +19,7 @@ export class DataManipulator {
       (serverResponds[1].top_ask.price + serverResponds[1].top_bid.price) / 2;
     const ratio = priceABC / priceDEF;
     // set bounds
+    // modify to change it should be +- 10% of 90 day average ratio but i'm not sure how get that average
     const upperBound = 1 + 0.05;
     const lowerBound = 1 - 0.05;
 
